@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Encurtador de Urls</title>
+</head>
+<body>
+
+{% if erro %}
+<span style="color:red">{{erro}}</span><br>
+{% endif %}
+<h1>Encurtador de URLS</h1><br>
+<h2>Para o correto funcionamento do software, insira o nome do site com http://<br>
+Por exemplo: Caso queira cadastrar o google, insira http://www.google.com.br</h2>
+    <form action="register" method="post">
+        <input type="text" name="old_url" placeholder="Url original" size="120">
+        <input type="submit" value="Enviar">
+    </form>
+<br>
+<br>
+<a href="relatorio"><h3>Relatório de acessos</h3></a>
+
+</body>
+</html>

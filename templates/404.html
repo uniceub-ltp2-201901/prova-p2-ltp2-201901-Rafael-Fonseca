@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Não encontramos</title>
+</head>
+<body>
+
+<script type="text/javascript">
+variaveis=window.location.href;
+quebra = variaveis.substring(variaveis.length - 5);
+correto = "http://localhost:5000/redirecionador/"+ quebra
+try{
+    location.href=correto;
+}
+catch(e if e instanceof TypeError){
+    location.href="http://localhost:5000/405";
+}
+</script>
+
+<h2>Por favor, verifique se esta digitando a url corretamente: <br></h2>
+<h3>http://localhost:5000/redirecionador/(((url encurtada desejada))) </h3>
+
+<a href="http://localhost:5000/">Home</a>
+
+</body>
+</html>
